@@ -1,0 +1,31 @@
+.nav {
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: darkgreen;
+    align-items: center;
+}
+
+.titulo {
+    font-family: 'Square Peg', cursive;
+    font-size: 60px;
+    color: whitesmoke;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu a {
+    padding: 20px;
+    text-decoration: none;
+    color: bisque;
+}
+
+.menu a:hover {
+    color: burlywood;
+}
+
