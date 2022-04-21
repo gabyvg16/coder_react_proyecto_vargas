@@ -1,6 +1,7 @@
 import React from 'react';
 import './NavBar.css';
 import logo2 from '../../images/logo2.png';
+import CardWidget from './CardWidget/CardWidget';
 
 function NavBar(props) {
     return (
@@ -14,6 +15,8 @@ function NavBar(props) {
                 <a href='#'>Semillas</a>
                 <a href='#'>Sustratos</a>
             </ul>
+
+            <CardWidget />
         </div>
     );
 }
