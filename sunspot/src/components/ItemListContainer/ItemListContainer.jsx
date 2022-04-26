@@ -1,10 +1,16 @@
 import React from 'react';
+import ItemCount from '../ItemCount/ItemCount';
 import './ItemListContainer.css';
 
+
 function ItemListContainer(props) {
+    function Agregar() {
+        console.log("Agregué al carrito");
+    }
+
     return (
         <div>
-            <p>Bienvenido a la tienda online de {props.nombre}</p>
+            <ItemCount stock={5} inicial={1} onAdd={Agregar}/>
         </div>
     );
 }
