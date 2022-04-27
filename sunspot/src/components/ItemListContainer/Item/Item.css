@@ -1,0 +1,18 @@
+.item {
+    border: 10px;
+    border-color: black;
+    background-color: antiquewhite;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.imagenTienda {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+h4 {
+    font-style: italic;
+}
