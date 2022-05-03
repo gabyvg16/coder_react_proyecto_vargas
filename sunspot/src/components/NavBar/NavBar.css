@@ -8,6 +8,7 @@
 }
 
 .titulo {
+    text-decoration: none;
     font-family: 'Square Peg', cursive;
     font-size: 60px;
     color: whitesmoke;

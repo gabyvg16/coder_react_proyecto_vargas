@@ -2,18 +2,19 @@ import React from 'react';
 import './NavBar.css';
 import logo2 from '../../images/logo2.png';
 import CardWidget from './CardWidget/CardWidget';
+import { NavLink } from 'react-router-dom';
 
 function NavBar(props) {
     return (
         <div className='nav'>
-            <img src={logo2} className="logo" alt="logo" />
+            <NavLink to='/'><img src={logo2} className="logo" alt="logo" /></NavLink>           
 
-            <h1 className='titulo'>Sunspot</h1>
+            <h1><NavLink to='/' className='titulo'>Sunspot</NavLink></h1>
 
             <ul className='menu'>
-                <a href='#'>Plantas</a>
-                <a href='#'>Semillas</a>
-                <a href='#'>Sustratos</a>
+                <li><NavLink to='/category/plantas'>Plantas</NavLink></li>
+                <li><NavLink to='/category/semillas'>Semillas</NavLink></li>
+                <li><NavLink to='/category/sustratos'>Sustratos</NavLink></li>
             </ul>
 
             <CardWidget />

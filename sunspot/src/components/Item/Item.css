@@ -16,3 +16,14 @@
 h4 {
     font-style: italic;
 }
+
+.tituloItem {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    padding: 0.5rem;
+    background-color: powderblue;
+    border-radius: 15px;
+}
