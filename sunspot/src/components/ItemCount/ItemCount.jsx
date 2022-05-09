@@ -27,7 +27,7 @@ function ItemCount(props) {
                 <button className='boton' onClick={() => handleAumentar()}>+</button>
             </div>
 
-            <button className='addButton' onClick={() => (count <= props.stock) && props.onAdd()}>Agregar al carrito</button>
+            <button className='addButton' onClick={() => (count <= props.stock) && props.onAdd(count)}>Agregar al carrito</button>
         </div>
     );
 }
