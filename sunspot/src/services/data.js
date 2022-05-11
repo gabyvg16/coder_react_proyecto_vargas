@@ -4,7 +4,7 @@ const data = [{
     name: "Girasol",
     scientificName: "Helianthus annuus",
     image: "https://images.freeimages.com/images/large-previews/b0f/sunflower-1546158.jpg",
-    price: "100",
+    price: 100,
     stock: "3"
 },
 {
@@ -13,7 +13,7 @@ const data = [{
     name: "Margarita",
     scientificName: "Bellis perennis",
     image: "https://images.freeimages.com/images/large-previews/0ea/lawn-daisy-1466598.jpg",
-    price: "105",
+    price: 105,
     stock: "3"
 },
 {
@@ -22,7 +22,7 @@ const data = [{
     name: "Zinnia",
     scientificName: "Zinnia",
     image: "https://images.freeimages.com/images/large-previews/1d1/butterfly-2-1375489.jpg",
-    price: "102",
+    price: 102,
     stock: "10"
 },
 {
@@ -31,7 +31,7 @@ const data = [{
     name: "Crisantemo",
     scientificName: "Chrysanthemum",
     image: "https://images.freeimages.com/images/large-previews/6e2/chrysanthemum-1367570.jpg",
-    price: "120",
+    price: 120,
     stock: "5"
 },
 {
@@ -40,7 +40,7 @@ const data = [{
     name: "Lavanda",
     scientificName: "Lavandula",
     image: "https://images.freeimages.com/images/large-previews/541/lavender-field-1410156.jpg",
-    price: "99",
+    price: 99,
     stock: "1"
 },
 {
@@ -49,7 +49,7 @@ const data = [{
     name: "Pensamiento",
     scientificName: "Viola × wittrockiana",
     image: "https://images.freeimages.com/images/large-previews/f4a/signs-of-spring-1309272.jpg",
-    price: "105",
+    price: 105,
     stock: "15"
 },
 {
@@ -58,7 +58,7 @@ const data = [{
     name: "Cactus",
     scientificName: "Especies varias",
     image: "https://images.freeimages.com/images/large-previews/9d2/punches-1178562.jpg",
-    price: "200",
+    price: 200,
     stock: "25"
 },
 {
@@ -67,7 +67,7 @@ const data = [{
     name: "Suculentas",
     scientificName: "Crassulaceae",
     image: "https://images.freeimages.com/images/large-previews/06e/crassulaceae-1332861.jpg",
-    price: "210",
+    price: 210,
     stock: "25"
 },
 {
@@ -76,7 +76,7 @@ const data = [{
     name: "Alocasia bambino",
     scientificName: "Alocasia x amazonica",
     image: "https://cdn.shopify.com/s/files/1/1706/1307/products/Alocasia-Bambino-Arrow-Jewel-Alocasia-v2_5000x.jpg?v=1651478320",
-    price: "500",
+    price: 500,
     stock: "5"
 },
 {
@@ -85,7 +85,7 @@ const data = [{
     name: "Calathea",
     scientificName: "Calathea ornata",
     image: "https://viveroagronomia.com.ar/wp-content/uploads/2021/12/calathea-mil-rayas-Vivero-Agronomia-1.png",
-    price: "600",
+    price: 600,
     stock: "2"
 },
 {
@@ -94,7 +94,7 @@ const data = [{
     name: "Sustrato Sunspot",
     scientificName: "Especial para suculentas",
     image: "https://deraizplantas.com/wp-content/uploads/2018/11/L1050810_Fotor.jpg",
-    price: "200",
+    price: 200,
     stock: "2"
 },
 {
@@ -103,7 +103,7 @@ const data = [{
     name: "Bocashi",
     scientificName: "Abono para semilleros",
     image: "https://http2.mlstatic.com/D_NQ_NP_2X_923058-MLA48698649223_122021-F.webp",
-    price: "300",
+    price: 300,
     stock: "5"
 },
 {
@@ -112,7 +112,7 @@ const data = [{
     name: "Fibra de coco",
     scientificName: "Para comenzar a cultivar",
     image: "https://www.jardineriaon.com/wp-content/uploads/2020/09/fibra-de-coco.jpg",
-    price: "305",
+    price: 305,
     stock: "5"
 },
 ];

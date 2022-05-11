@@ -2,3 +2,13 @@ ion-icon {
     font-size: 30px;
     color: bisque;
 }
+
+.cartWidgetContainer {
+    display: flex;
+    align-items: center
+}
+
+.cartWidgetText {
+    color: bisque;
+    font-size: 15px;
+}

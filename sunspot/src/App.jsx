@@ -8,16 +8,15 @@ import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
+    <div className="App">        
+        <NavBar />
 
-      <Routes>
-        <Route path='/' element={<ItemListContainer/>} />
-        <Route path='/category/:categoryId' element={<ItemListContainer/>} />
-        <Route path='/item/:id' element={<ItemDetailContainer/>} />
-        <Route path='/cart' element={<Cart/>} />
-      </Routes>
-
+        <Routes>
+          <Route path='/' element={<ItemListContainer />} />
+          <Route path='/category/:categoryId' element={<ItemListContainer />} />
+          <Route path='/item/:id' element={<ItemDetailContainer />} />
+          <Route path='/cart' element={<Cart />} />
+        </Routes>
     </div>
   );
 }

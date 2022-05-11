@@ -4,7 +4,6 @@ import './ItemListContainer.css';
 import getData from '../../services/getData';
 import { useParams } from 'react-router-dom';
 
-
 function ItemListContainer(props) {
     // Estado inicial
     const [products, setProducts] = useState([]);
