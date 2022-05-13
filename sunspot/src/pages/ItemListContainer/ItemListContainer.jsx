@@ -3,23 +3,30 @@ import ItemList from '../../components/ItemList/ItemList';
 import './ItemListContainer.css';
 import getData from '../../services/getData';
 import { useParams } from 'react-router-dom';
+import Loading from '../../components/Loading/Loading';
 
 function ItemListContainer(props) {
     // Estado inicial
+    const [loading, setLoading] = useState(false);
     const [products, setProducts] = useState([]);
     const { categoryId } = useParams();
 
     // Efecto
     useEffect(() => {
+        setLoading(true);
         getData(categoryId)
-        .then((res) => setProducts(res))
-        .catch((error) => console.log("Error: ", error))
+            .then((res) => setProducts(res))
+            .catch((error) => console.log("Error: ", error))
+            .finally(() => setLoading(false))
     }, [categoryId]);
 
     return (
         <div>
-             <ItemList products={products}/>
-         </div>
+            {loading ?
+                <Loading />:
+                <ItemList products={products} />
+            }
+        </div>
     );
 }
 

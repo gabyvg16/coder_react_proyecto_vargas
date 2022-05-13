@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import CartContext from '../../store/cart-context';
 import ItemCart from '../../components/ItemCart/ItemCart';
 import './Cart.css';
+import { NavLink } from 'react-router-dom';
 
 function Cart() {
     const cartCtx = useContext(CartContext);
@@ -21,9 +22,15 @@ function Cart() {
                             <h4>Total productos: {cartCtx.totalProductos()}</h4>
                             <h4>Precio total: $ {parseInt(cartCtx.totalCosto())}</h4>
                         </div>
-                        <button onClick={() => cartCtx.clear()}>Vaciar carrito</button>
+                        <div>
+                            <button className='buttonCart' onClick={() => cartCtx.clear()}>Vaciar carrito</button>
+                            <button className='buttonCart'>Terminar compra</button>
+                        </div>
                     </> :
-                    <h3>El carrito está vacío</h3>
+                    <div>
+                        <h3>El carrito está vacío</h3>
+                        <NavLink to='/'><button>Volver a la tienda</button></NavLink>
+                    </div>
             }
         </div>
     );

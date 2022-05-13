@@ -3,3 +3,7 @@
     flex-direction: column;
     align-items: center;
 }
+
+.buttonCart {
+    margin: 1rem;
+}
