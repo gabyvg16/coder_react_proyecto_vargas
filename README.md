@@ -10,8 +10,4 @@ Dentro del detalle del producto, se colocó un contador (considera el stock disp
 
 - El diseño de la página se está realizando principalmente con Flexbox.
 - Se utiliza la librería Ionic para los íconos.
-<<<<<<< HEAD
 - También se utilizan fuentes externas para las tipografías.
-=======
-- También se utilizan fuentes externas para las tipografías.
->>>>>>> 3649cb8978d8571f5153c719d34187125d6ce3d9

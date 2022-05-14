@@ -5,6 +5,9 @@ import './ItemDetailContainer.css';
 import getItem from '../../services/getItem';
 import Loading from '../../components/Loading/Loading';
 
+
+
+
 function ItemDetailContainer(props) {
     // Estado inicial
     const [loading, setLoading] = useState(false);
@@ -15,7 +18,9 @@ function ItemDetailContainer(props) {
     useEffect(() => {
         setLoading(true);
         getItem(id)
-        .then(res => setItem(res))
+            .then(snapshot => { 
+                setItem({ ...snapshot.data(), id: snapshot.id});
+            })
         .catch(error => console.log("Error: ", error))
         .finally(() => setLoading(false))
     }, [id]);

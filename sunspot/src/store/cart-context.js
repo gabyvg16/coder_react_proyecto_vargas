@@ -22,7 +22,6 @@ export const CartContextProvider = ({children}) => {
             // Agrego al carrito
             setProductList(productList.map(p => p.id === product.id ? {...p, quantity: p.quantity + product.quantity} : p));
         } else {
-            console.log("nuevo");
             setProductList([product, ...productList]);
         }
     }

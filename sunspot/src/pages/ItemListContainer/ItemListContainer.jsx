@@ -15,7 +15,11 @@ function ItemListContainer(props) {
     useEffect(() => {
         setLoading(true);
         getData(categoryId)
-            .then((res) => setProducts(res))
+            .then(snapshot => {
+                setProducts(snapshot.docs.map(doc => { 
+                    return { ...doc.data(), id: doc.id } 
+                }));
+            })
             .catch((error) => console.log("Error: ", error))
             .finally(() => setLoading(false))
     }, [categoryId]);
@@ -23,7 +27,7 @@ function ItemListContainer(props) {
     return (
         <div>
             {loading ?
-                <Loading />:
+                <Loading /> :
                 <ItemList products={products} />
             }
         </div>
