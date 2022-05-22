@@ -8,6 +8,12 @@ En el listado de productos, es posible hacer click en la imagen o título de cad
 
 Dentro del detalle del producto, se colocó un contador (considera el stock disponible), para poder seleccionar la cantidad del producto y agregarla al carrito.
 
+En el carrito, es posible remover el item, vaciar el carrito y terminar la compra.
+
+Al hacer click en Terminar compra, se redirige a la página de checkout donde se solicitan los datos del comprador, al ser completados, se registra la compra y se genera un ID de compra que se muestra al usuario.
+
+--
+
 - El diseño de la página se está realizando principalmente con Flexbox.
-- Se utiliza la librería Ionic para los íconos.
+- Se utiliza la librería Ionic para los íconos y React-spinners para el Loading.
 - También se utilizan fuentes externas para las tipografías.

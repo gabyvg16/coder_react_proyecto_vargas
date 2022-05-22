@@ -1,0 +1,36 @@
+form {
+    background-color: bisque;
+    padding: 1rem;
+    border-radius: 15px;
+}
+.inputContainer {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.checkoutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label {
+    padding: 1rem;
+}
+
+.inputText {
+    margin: 1rem;
+    padding: 0.5rem;
+    font-size: medium;
+}
+
+.boton {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: powderblue;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+}

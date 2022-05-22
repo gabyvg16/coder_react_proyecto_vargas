@@ -7,3 +7,8 @@
 .buttonCart {
     margin: 1rem;
 }
+
+.botonTexto {
+    text-decoration: none;
+    color: black;
+}

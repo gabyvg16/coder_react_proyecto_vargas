@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import CartContext from '../../store/cart-context';
 import ItemCart from '../../components/ItemCart/ItemCart';
 import './Cart.css';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 function Cart() {
     const cartCtx = useContext(CartContext);
@@ -24,7 +24,7 @@ function Cart() {
                         </div>
                         <div>
                             <button className='buttonCart' onClick={() => cartCtx.clear()}>Vaciar carrito</button>
-                            <button className='buttonCart'>Terminar compra</button>
+                            <button className='buttonCart'><Link to='/checkout' className="botonTexto">Terminar compra</Link></button> 
                         </div>
                     </> :
                     <div>

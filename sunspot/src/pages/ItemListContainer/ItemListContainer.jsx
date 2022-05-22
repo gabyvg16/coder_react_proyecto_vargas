@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ItemList from '../../components/ItemList/ItemList';
 import './ItemListContainer.css';
-import getData from '../../services/getData';
+import { getData } from '../../services/firebase/index.js';
 import { useParams } from 'react-router-dom';
 import Loading from '../../components/Loading/Loading';
 

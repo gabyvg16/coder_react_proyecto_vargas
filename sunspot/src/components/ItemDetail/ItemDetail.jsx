@@ -12,7 +12,6 @@ function ItemDetail({ item }) {
     function addHandler(quantityToAdd) {
         setCantidadDeProductos(quantityToAdd);
         cartCtx.addItem({quantity: quantityToAdd, ...item});
-        console.log("Agregué al carrito");
     }
 
     return (
