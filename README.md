@@ -12,6 +12,8 @@ En el carrito, es posible remover el item, vaciar el carrito y terminar la compr
 
 Al hacer click en Terminar compra, se redirige a la página de checkout donde se solicitan los datos del comprador, al ser completados, se registra la compra y se genera un ID de compra que se muestra al usuario.
 
+Navegabilidad: https://youtu.be/E5DKTl7-lGo
+
 --
 
 - El diseño de la página se está realizando principalmente con Flexbox.
