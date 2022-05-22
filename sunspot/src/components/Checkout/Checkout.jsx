@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 
 const Checkout = () => {
-    const { products, totalCosto } = useContext(CartContext);
+    const cartCtx = useContext(CartContext);
     const [loading, setLoading] = useState(false);
     const [orderID, setOrderID] = useState();
     const [buyer, setBuyer] = useState({
@@ -26,6 +26,7 @@ const Checkout = () => {
         try {
             const col = collection(db, "Orders");
             const order = await addDoc(col, data);
+            cartCtx.clear();
             setOrderID(order.id);
             setLoading(false);
         } catch (error) {
@@ -44,10 +45,10 @@ const Checkout = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const fecha = new Date();
-        const items = products.map(e => { return { id: e.id, name: e.name, price: e.price, quantity: e.quantity } });
-        const totalCompra = totalCosto();
-        const detalleComra = { buyer, items, fecha, totalCompra, state: "Generada" };
-        generateOrder(detalleComra);
+        const items = cartCtx.products.map(e => { return { id: e.id, name: e.name, price: e.price, quantity: e.quantity } });
+        const totalCompra = cartCtx.totalCosto();
+        const detalleCompra = { buyer, items, fecha, totalCompra, state: "Generada" };
+        generateOrder(detalleCompra);
     }
 
     return (
